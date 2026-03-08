@@ -14,8 +14,14 @@
 </head>
 
 <body>
+    <div id="scroll-progress"></div>
     <div id="cursor"></div>
     <div id="cursor-blur"></div>
+
+    <!-- Background Animated Shapes -->
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+    <div class="bg-shape shape-3"></div>
 
     <nav class="navbar" id="navbar">
         <div class="nav-container">
@@ -34,7 +40,7 @@
     <section id="home" class="hero section">
         <div class="hero-content" data-reveal>
             <h1><span class="gradient-text">Mahammad Ansar</span></h1>
-            <h2>Full-Stack Web Developer</h2>
+            <h2><span class="typed-text"></span><span class="cursor typing-cursor">&nbsp;</span></h2>
             <p>Passionate about creating responsive, user-friendly web applications with seamless UI/UX. Based in Dubai,
                 UAE.</p>
             <div class="cta-group">
@@ -49,7 +55,8 @@
         </div>
         <div class="hero-visual" data-reveal="right">
             <div class="glowing-orb"></div>
-            <div class="glass-card code-snippet">
+            <div class="glass-card code-snippet" data-tilt data-tilt-max="15" data-tilt-speed="400"
+                data-tilt-glare="true" data-tilt-max-glare="0.2">
                 <pre><code><span class="keyword">const</span> developer = {
     <span class="property">name</span>: <span class="string">"Mahammad Ansar"</span>,
     <span class="property">role</span>: <span class="string">"Full-Stack Dev"</span>,
@@ -63,7 +70,7 @@
     <section id="about" class="section">
         <h2 class="section-title text-center" data-reveal>About <span class="gradient-text">Me</span></h2>
         <div class="about-grid grid-2">
-            <div class="glass-card" data-reveal="left">
+            <div class="glass-card" data-reveal="left" data-tilt data-tilt-max="5">
                 <h3>Career Objective</h3>
                 <p>Passionate Full-Stack Web Developer with 2+ years of experience in HTML, CSS, JavaScript, Bootstrap,
                     PHP, and MySQL. Skilled in creating responsive, user-friendly web applications with seamless UI/UX,
@@ -75,7 +82,7 @@
                     <p><i class="fas fa-phone"></i> +971 56 139 6917</p>
                 </div>
             </div>
-            <div class="glass-card" data-reveal="right">
+            <div class="glass-card" data-reveal="right" data-tilt data-tilt-max="5">
                 <h3>Education & Certifications</h3>
                 <p><strong>B.E. Computer Science and Engineering</strong><br>Visvesvaraya Technological University,
                     Karnataka, India</p>
@@ -91,7 +98,7 @@
     <section id="skills" class="section">
         <h2 class="section-title text-center" data-reveal>My <span class="gradient-text">Skills</span></h2>
         <div class="skills-grid grid-3">
-            <div class="glass-card skill-box" data-reveal="up">
+            <div class="glass-card skill-box" data-reveal="up" data-tilt data-tilt-scale="1.05">
                 <h3>Frontend</h3>
                 <div class="tags mt-4">
                     <span class="tag">HTML5</span> <span class="tag">CSS3</span> <span class="tag">JavaScript</span>
@@ -99,14 +106,16 @@
                     <span class="tag">Ionic Framework</span> <span class="tag">Bootstrap</span>
                 </div>
             </div>
-            <div class="glass-card skill-box" data-reveal="up" style="transition-delay: 0.1s;">
+            <div class="glass-card skill-box" data-reveal="up" style="transition-delay: 0.1s;" data-tilt
+                data-tilt-scale="1.05">
                 <h3>Backend & DB</h3>
                 <div class="tags mt-4">
                     <span class="tag">PHP</span> <span class="tag">Node.js</span> <span class="tag">MySQL</span> <span
                         class="tag">MSSQL</span> <span class="tag">MongoDB</span>
                 </div>
             </div>
-            <div class="glass-card skill-box" data-reveal="up" style="transition-delay: 0.2s;">
+            <div class="glass-card skill-box" data-reveal="up" style="transition-delay: 0.2s;" data-tilt
+                data-tilt-scale="1.05">
                 <h3>Other Tools & APIs</h3>
                 <div class="tags mt-4">
                     <span class="tag">AI/ML</span> <span class="tag">Computer Vision</span> <span
@@ -120,7 +129,7 @@
     <section id="experience" class="section">
         <h2 class="section-title text-center" data-reveal>Work <span class="gradient-text">Experience</span></h2>
         <div class="timeline">
-            <div class="glass-card timeline-item" data-reveal="left">
+            <div class="glass-card timeline-item" data-reveal="left" data-tilt data-tilt-max="3">
                 <h3>Software Developer <span class="gradient-text">@ Kleindienst Group</span></h3>
                 <p class="timeline-date">2026 - Present</p>
                 <ul>
@@ -129,7 +138,7 @@
                     <li>Collaborating with cross-functional teams to deliver high-quality digital products.</li>
                 </ul>
             </div>
-            <div class="glass-card timeline-item mt-4" data-reveal="right">
+            <div class="glass-card timeline-item mt-4" data-reveal="right" data-tilt data-tilt-max="3">
                 <h3>Web Developer <span class="gradient-text">@ Indus Real Estate LLC, Dubai</span></h3>
                 <p class="timeline-date">May 2024 - 2026</p>
                 <ul>
@@ -137,7 +146,7 @@
                     <li>Created high-conversion landing pages and internal employee management tools.</li>
                 </ul>
             </div>
-            <div class="glass-card timeline-item mt-4" data-reveal="right">
+            <div class="glass-card timeline-item mt-4" data-reveal="right" data-tilt data-tilt-max="3">
                 <h3>Web Developer <span class="gradient-text">@ Awards Qatar WLL, Doha</span></h3>
                 <p class="timeline-date">Sep 2023 - May 2024</p>
                 <ul>
@@ -145,7 +154,7 @@
                     <li>Managed digital presence, content creation, and graphic design.</li>
                 </ul>
             </div>
-            <div class="glass-card timeline-item mt-4" data-reveal="left">
+            <div class="glass-card timeline-item mt-4" data-reveal="left" data-tilt data-tilt-max="3">
                 <h3>Web Developer <span class="gradient-text">@ Freelance (Remote)</span></h3>
                 <p class="timeline-date">June 2022 - April 2024</p>
                 <ul>
@@ -159,7 +168,8 @@
     <section id="projects" class="section">
         <h2 class="section-title text-center" data-reveal>Featured <span class="gradient-text">Projects</span></h2>
         <div class="projects-grid grid-2">
-            <div class="glass-card" data-reveal="up">
+            <div class="glass-card" data-reveal="up" data-tilt data-tilt-max="10" data-tilt-glare="true"
+                data-tilt-max-glare="0.5">
                 <h3><i class="fas fa-leaf"></i> IoT Cloud for Hydroponics</h3>
                 <p>Developed an IoT cloud for agriculture to monitor and analyze humidity, temperature, and PH crop
                     levels.</p>
@@ -167,7 +177,8 @@
                     <span class="tag">IoT</span> <span class="tag">Cloud</span> <span class="tag">Data Analysis</span>
                 </div>
             </div>
-            <div class="glass-card" data-reveal="up" style="transition-delay: 0.1s;">
+            <div class="glass-card" data-reveal="up" style="transition-delay: 0.1s;" data-tilt data-tilt-max="10"
+                data-tilt-glare="true" data-tilt-max-glare="0.5">
                 <h3><i class="fas fa-dumbbell"></i> Gym Management System</h3>
                 <p>Comprehensive system with PHP/Java backend, HTML/CSS frontend, and DBMS for member management and
                     billing.</p>
@@ -175,7 +186,8 @@
                     <span class="tag">PHP</span> <span class="tag">Java</span> <span class="tag">DBMS</span>
                 </div>
             </div>
-            <div class="glass-card" data-reveal="up">
+            <div class="glass-card" data-reveal="up" data-tilt data-tilt-max="10" data-tilt-glare="true"
+                data-tilt-max-glare="0.5">
                 <h3><i class="fas fa-shopping-cart"></i> E-commerce Website</h3>
                 <p>Fully functional e-commerce platform with intuitive frontend, product listings, payment processing,
                     and inventory management.</p>
@@ -183,7 +195,8 @@
                     <span class="tag">Payments API</span> <span class="tag">Full-Stack</span>
                 </div>
             </div>
-            <div class="glass-card" data-reveal="up" style="transition-delay: 0.1s;">
+            <div class="glass-card" data-reveal="up" style="transition-delay: 0.1s;" data-tilt data-tilt-max="10"
+                data-tilt-glare="true" data-tilt-max-glare="0.5">
                 <h3><i class="fas fa-eye"></i> AI/ML Drowsiness Detection</h3>
                 <p>Safety application leveraging Machine Learning and Computer Vision to detect driver drowsiness and
                     alert them to prevent accidents.</p>
@@ -195,7 +208,7 @@
     </section>
 
     <section id="contact" class="section">
-        <div class="glass-card text-center text-center-box" data-reveal>
+        <div class="glass-card text-center text-center-box" data-reveal data-tilt data-tilt-max="5">
             <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
             <p>I'm currently available for full-time roles or freelance projects. Let's build something amazing
                 together.</p>
@@ -211,6 +224,8 @@
         <p>&copy; 2026 Mahammad Ansar.</p>
     </footer>
 
+    <!-- Vanilla Tilt JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
     <script src="script.js"></script>
 </body>
 
